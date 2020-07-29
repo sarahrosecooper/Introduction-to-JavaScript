@@ -316,7 +316,18 @@ grade(0);
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays
 // try looking up the .includes() method
+let string = "I am very proud of you";
+function getVowels(str) {
+  let get = string.match(/[aeiou]/gi);
+  let searching = /[aeioou]/gi;
+  const found = string.match(searching);
+  console.log(
+    "The answer to stretch vowels is " +
+      `there are ${get.length} vowels in this sentence and they are ${found}.`
+  );
+}
 
+getVowels();
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
